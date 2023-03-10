@@ -51,7 +51,5 @@
 -   We will primarily use QGIS and R software.
 -   Why?
     -   These are powerful and free
-    -   Industry standard GIS
-    -   You are likely to see it again
     -   Available in this lab
     -   You can install in your own machine
