@@ -9,7 +9,7 @@
 -   Lecture materials
 -   Assigned reading
 -   Assignments
--   Email address to submit Homework, assignments and reports: **geoinformatics.moinul\@gmail.com**
+-   Email address to submit homework, assignments and reports: **geoinformatics.moinul\@gmail.com**
 
 ## Grades
 
@@ -52,9 +52,9 @@
     -   Latitude and
     -   Longitude
 
-### How to find coordinates on Google Maps on the mobile app?
+### How to find coordinates on google maps on the mobile app?
 
--   Open the Google Maps app on your iPhone or Android phone
+-   Open the google maps app on your iPhone or Android phone
 
 -   Enter the location, or select and hold to drop a pin on the map of the location you want the coordinates for
 
