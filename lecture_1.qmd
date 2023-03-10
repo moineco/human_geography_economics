@@ -1,24 +1,6 @@
-# Objectives
+# Introduction to Geographic Information System (GIS)
 
-1.   Review syllabus and learning objectives
-2.   Begin our introduction to GIS
-
-## Everything you need is in Moodle
-
--   Syllabus
--   Lecture materials
--   Assigned reading
--   Assignments
--   Email address to submit homework, assignments and reports: **geoinformatics.moinul\@gmail.com**
-
-## Grades
-
--   Assignments
--   Quizzes
--   Final Exam
--   Class participation
-
-## Introduction to Gegraphic Information System (GIS)
+### A geographic information system (GIS) consists of integrated computer hardware and software that store, manage, analyze, edit, output, and visualize geographic data.
 
 ### Definition of Geoinformatics
 
@@ -26,7 +8,8 @@
 
 ### Why we need to study Geoinformatics?
 
--   Geoinformatics become very important technology to decision-makers across a wide range of disciplines.
+Geoinformatics become very important technology to decision-makers across a wide range of disciplines:
+
     -   Agriculture
     -   Climate change
     -   Oceanography
@@ -45,9 +28,7 @@
     -   Transport network planning
     -   Maritime transport
 
-### Geographic coordinate system (GCS)
-
--   A geographic coordinate system is a three-dimensional reference system that locates points on the Earth's surface. The unit of measure is usually decimal degrees. A point has two coordinate values:
+### Geographic coordinate system (GCS) is a three-dimensional reference system that locates points on the Earth's surface. The unit of measure is usually decimal degrees. A point has two coordinate values:
 
     -   Latitude and
     -   Longitude
@@ -70,8 +51,8 @@
 
 ### Software
 
--   We will primarily use QGIS and R software.
--   Why?
+We will primarily use QGIS and R software. Reasons:
+
     -   These are powerful and free
     -   Available in this lab
     -   You can install in your own machine
@@ -81,3 +62,18 @@
 -   Install QGIS in your computer (If you have any difficulties to install, I will guide you to install the software during our face-to-face lectures.)
 
 -   The web-link for downloading the software is below: <https://qgis.org/en/site/forusers/download.html>
+
+Everything you need is in Moodle:
+
+-   Syllabus
+-   Lecture materials
+-   Assigned reading
+-   Assignments
+-   Email address to submit homework, assignments and reports: **geoinformatics.moinul\@gmail.com**
+
+Grades:
+
+-   Assignments
+-   Quizzes
+-   Final Exam
+-   Class participation
