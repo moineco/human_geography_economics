@@ -1,3 +1,18 @@
+# Objectives
+
+- Introductions
+- Review syllabus and learning objectives
+- Begin our introduction to GIS
+
+## Everything you Need is in Moodle
+
+- Syllabus
+- Lecture materials
+- Assigned reading
+- Assignments
+
+### Email address to submit Homework, assignments and reports: geoinformatics.moinul@gmail.com
+
 # Introduction to GIS
 
 ## Defination of Geoinformatics
