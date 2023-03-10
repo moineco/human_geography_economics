@@ -35,17 +35,13 @@ Geoinformatics become very important technology to decision-makers across a wide
     -   Latitude and
     -   Longitude
 
-### How to find coordinates on google maps on the mobile app?
+### Find coordinates on google maps on the mobile app:
 
--   Open the google maps app on your iPhone or Android phone
-
--   Enter the location, or select and hold to drop a pin on the map of the location you want the coordinates for
-
--   Scroll down to find the coordinates.
-
--   Tap the coordinates to copy to your phone's clipboard
-
--   Paste the coordinates
+    -   Open the google maps app on your iPhone or Android phone
+    -   Enter the location, or select and hold to drop a pin on the map of the location you want the coordinates for
+    -   Scroll down to find the coordinates.
+    -   Tap the coordinates to copy to your phone's clipboard
+    -   Paste the coordinates
 
 > Find coordinates to identify and share the location of the Eikokuji Campus of Kochi University of Technology.
 
@@ -67,15 +63,15 @@ We will primarily use QGIS and R software. Reasons:
 
 Everything you need is in Moodle:
 
-   -  Syllabus
-   -  Lecture materials
-   -  Assigned reading
-   -  Assignments
-   -  Email address to submit homework, assignments and reports: **geoinformatics.moinul\@gmail.com**
+    -    Syllabus
+    -    Lecture materials
+    -    Assigned reading
+    -    Assignments
+    -    Email address to submit homework, assignments and reports: **geoinformatics.moinul\@gmail.com**
 
 Grades:
 
-   -   Assignments
-   -   Quizzes
-   -   Final Exam
-   -   Class participation
+    -    Assignments
+    -    Quizzes
+    -    Final Exam
+    -    Class participation
