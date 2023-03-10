@@ -1,12 +1,12 @@
 # Introduction to Geographic Information System (GIS)
 
-### A geographic information system (GIS) consists of integrated computer hardware and software that store, manage, analyze, edit, output, and visualize geographic data.
+- A geographic information system (GIS) consists of integrated computer hardware and software that store, manage, analyze, edit, output, and visualize geographic data.
 
-### Definition of Geoinformatics
+## Definition of Geoinformatics
 
 -   Geoinformatics is the science and the technology which develops and uses information science infrastructure to address the problems of geography and related branches of science and engineering.
 
-### Why we need to study Geoinformatics?
+## Why we need to study Geoinformatics?
 
 Geoinformatics become very important technology to decision-makers across a wide range of disciplines:
 
@@ -28,7 +28,9 @@ Geoinformatics become very important technology to decision-makers across a wide
     -   Transport network planning
     -   Maritime transport
 
-### Geographic coordinate system (GCS) is a three-dimensional reference system that locates points on the Earth's surface. The unit of measure is usually decimal degrees. A point has two coordinate values:
+## Geographic coordinate system (GCS) 
+
+- Geographic coordinate system (GCS) is a three-dimensional reference system that locates points on the Earth's surface. The unit of measure is usually decimal degrees. A point has two coordinate values:
 
     -   Latitude and
     -   Longitude
