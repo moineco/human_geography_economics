@@ -1,10 +1,9 @@
 # Objectives
 
--   Introductions
--   Review syllabus and learning objectives
--   Begin our introduction to GIS
+1.   Review syllabus and learning objectives
+2.   Begin our introduction to GIS
 
-## Everything you Need is in Moodle
+## Everything you need is in Moodle
 
 -   Syllabus
 -   Lecture materials
@@ -12,20 +11,20 @@
 -   Assignments
 -   Email address to submit Homework, assignments and reports: **geoinformatics.moinul\@gmail.com**
 
-# Grades
+## Grades
 
 -   Assignments
 -   Quizzes
 -   Final Exam
 -   Class participation
 
-# Introduction to GIS
+## Introduction to Gegraphic Information System (GIS)
 
-## Definition of Geoinformatics
+### Definition of Geoinformatics
 
 -   Geoinformatics is the science and the technology which develops and uses information science infrastructure to address the problems of geography and related branches of science and engineering.
 
-## Why we need to study Geoinformatics?
+### Why we need to study Geoinformatics?
 
 -   Geoinformatics become very important technology to decision-makers across a wide range of disciplines.
     -   Agriculture
@@ -46,14 +45,14 @@
     -   Transport network planning
     -   Maritime transport
 
-## Geographic coordinate system (GCS)
+### Geographic coordinate system (GCS)
 
 -   A geographic coordinate system is a three-dimensional reference system that locates points on the Earth's surface. The unit of measure is usually decimal degrees. A point has two coordinate values:
 
     -   Latitude and
     -   Longitude
 
-## How to find coordinates on Google Maps on the mobile app?
+### How to find coordinates on Google Maps on the mobile app?
 
 -   Open the Google Maps app on your iPhone or Android phone
 
@@ -69,7 +68,7 @@
 
 ![Find the coordinates on google map mobile application](figures/cordinate.jpg){fig-align="center" width="185"}
 
-## Software
+### Software
 
 -   We will primarily use QGIS and R software.
 -   Why?
@@ -77,7 +76,7 @@
     -   Available in this lab
     -   You can install in your own machine
 
-## For next lectures
+### For next lectures
 
 -   Install QGIS in your computer (If you have any difficulties to install, I will guide you to install the software during our face-to-face lectures.)
 
