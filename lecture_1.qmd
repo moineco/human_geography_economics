@@ -1,0 +1,57 @@
+# Introduction to GIS
+
+## Defination of Geoinformatics
+
+-   Geoinformatics is the science and the technology which develops and uses information science infrastructure to address the problems of geography and related branches of science and engineering.
+
+## Why we need to study Geoinformatics?
+
+-   Geoinformatics become very important technology to decision-makers across a wide range of disciplines.
+    -   Agriculture
+    -   Climate change
+    -   Oceanography
+    -   Business location planning
+    -   Architecture
+    -   Telecommunications
+    -   Criminology
+    -   Aviation
+    -   Biodiversity conservation
+    -   Urban planning
+    -   Land use management
+    -   Navigation systems
+    -   Public health
+    -   Environmental analysis
+    -   Military
+    -   Transport network planning
+    -   Maritime transport
+
+## Geographic coordinate system (GCS)
+
+-   A geographic coordinate system is a three-dimensional reference system that locates points on the Earth's surface. The unit of measure is usually decimal degrees. A point has two coordinate values:
+
+    -   Latitude and
+    -   Longitude
+
+## How to find coordinates on Google Maps on the mobile app?
+
+-   Open the Google Maps app on your iPhone or Android phone
+
+-   Enter the location, or select and hold to drop a pin on the map of the location you want the coordinates for
+
+-   Scroll down to find the coordinates.
+
+-   Tap the coordinates to copy to your phone's clipboard
+
+-   Paste the coordinates
+
+> Find coordinates to identify and share the location of the Eikokuji Campus of Kochi University of Technology.
+
+## Software
+
+-   We will primarily use QGIS and R software.
+-   Why?
+    -   These are powerful and free
+    -   Industry standard GIS
+    -   You are likely to see it again
+    -   Available in this lab
+    -   You can install in your own machine

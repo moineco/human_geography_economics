@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Human Geography and Economics",
+    "section": "",
+    "text": "Preface\nUpdated on: 2023-03-10\nHundreds of thousands of organizations are using geographic information system (GIS) to make maps that communicate, perform analysis, share information, and solve complex problems around the world. This “Human Geography and Economics” course basically deals with GIS, a spatial system that creates, manages, analyzes, and maps all types of data. Every day, GIS powers millions of decisions around the world. It makes a big impact on our lives and you might not even realize it.\nThe “Human Geography and Economics” course contents are as below:\nSection 1: What is geographic information system (GIS)?\n\nLecture 1: Introduction to GIS\nLecture 2: GIS information provision\nLecture 3: Geocoding for survey and natural experiment\nLecture 4: GIS for biodiversity management\nLecture 5: GIS for natural resource management\n\nSection 2: What is geographic data?\n\nLecture 6: Spatial data collection, storage and management\nLecture 7: Spatial data visualization\nLecture 8: Spatial data process\nLecture 9: Spatial data create\nLecture 10: Spatial data analyze\n\nSection 3: How geographic data can be utilized for the policy analysis?\n\nLecture 11: Social applications of GIS\nLecture 12: GIS to solving real world problem (Nankai trough hazard map 1)\nLecture 13: GIS to solving real world problem (Nankai trough hazard map 2)\nLecture 14: GIS to solving real world problem (\\(CO_2\\) emission)\nLecture 15: GIS to solving real world problem (Biodiversity)\n\n\n\n\nGeographic Information System"
+  },
+  {
+    "objectID": "lecture_1.html",
+    "href": "lecture_1.html",
+    "title": "1  Introduction to GIS",
+    "section": "",
+    "text": "Geoinformatics is the science and the technology which develops and uses information science infrastructure to address the problems of geography and related branches of science and engineering."
+  },
+  {
+    "objectID": "lecture_1.html#why-we-need-to-study-geoinformatics",
+    "href": "lecture_1.html#why-we-need-to-study-geoinformatics",
+    "title": "1  Introduction to GIS",
+    "section": "1.2 Why we need to study Geoinformatics?",
+    "text": "1.2 Why we need to study Geoinformatics?\n\nGeoinformatics become very important technology to decision-makers across a wide range of disciplines.\n\nAgriculture\nClimate change\nOceanography\nBusiness location planning\nArchitecture\nTelecommunications\nCriminology\nAviation\nBiodiversity conservation\nUrban planning\nLand use management\nNavigation systems\nPublic health\nEnvironmental analysis\nMilitary\nTransport network planning\nMaritime transport"
+  },
+  {
+    "objectID": "lecture_1.html#geographic-coordinate-system-gcs",
+    "href": "lecture_1.html#geographic-coordinate-system-gcs",
+    "title": "1  Introduction to GIS",
+    "section": "1.3 Geographic coordinate system (GCS)",
+    "text": "1.3 Geographic coordinate system (GCS)\n\nA geographic coordinate system is a three-dimensional reference system that locates points on the Earth’s surface. The unit of measure is usually decimal degrees. A point has two coordinate values:\n\nLatitude and\nLongitude"
+  },
+  {
+    "objectID": "lecture_1.html#how-to-find-coordinates-on-google-maps-on-the-mobile-app",
+    "href": "lecture_1.html#how-to-find-coordinates-on-google-maps-on-the-mobile-app",
+    "title": "1  Introduction to GIS",
+    "section": "1.4 How to find coordinates on Google Maps on the mobile app?",
+    "text": "1.4 How to find coordinates on Google Maps on the mobile app?\n\nOpen the Google Maps app on your iPhone or Android phone\nEnter the location, or select and hold to drop a pin on the map of the location you want the coordinates for\nScroll down to find the coordinates.\nTap the coordinates to copy to your phone’s clipboard\nPaste the coordinates\n\n\nFind coordinates to identify and share the location of the Eikokuji Campus of Kochi University of Technology."
+  },
+  {
+    "objectID": "lecture_1.html#software",
+    "href": "lecture_1.html#software",
+    "title": "1  Introduction to GIS",
+    "section": "1.5 Software",
+    "text": "1.5 Software\n\nWe will primarily use QGIS and R software.\nWhy?\n\nThese are powerful and free\nIndustry standard GIS\nYou are likely to see it again\nAvailable in this lab\nYou can install in your own machine"
+  },
+  {
+    "objectID": "lecture_1.html#defination-of-geoinformatics",
+    "href": "lecture_1.html#defination-of-geoinformatics",
+    "title": "1  Introduction to GIS",
+    "section": "1.1 Defination of Geoinformatics",
+    "text": "1.1 Defination of Geoinformatics\n\nGeoinformatics is the science and the technology which develops and uses information science infrastructure to address the problems of geography and related branches of science and engineering."
+  }
+]

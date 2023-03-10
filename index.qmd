@@ -1,0 +1,45 @@
+# Preface {.unnumbered}
+
+Updated on: `r Sys.Date()`
+
+Hundreds of thousands of organizations are using geographic information system (GIS) to make maps that communicate, perform analysis, share information, and solve complex problems around the world. This "Human Geography and Economics" course basically deals with GIS, a spatial system that creates, manages, analyzes, and maps all types of data. Every day, GIS powers millions of decisions around the world. It makes a big impact on our lives and you might not even realize it.
+
+The "Human Geography and Economics" course contents are as below:
+
+Section 1: What is geographic information system (GIS)?
+
+-   Lecture 1: Introduction to GIS
+
+-   Lecture 2: GIS information provision
+
+-   Lecture 3: Geocoding for survey and natural experiment
+
+-   Lecture 4: GIS for biodiversity management
+
+-   Lecture 5: GIS for natural resource management
+
+Section 2: What is geographic data?
+
+-   Lecture 6: Spatial data collection, storage and management
+
+-   Lecture 7: Spatial data visualization
+
+-   Lecture 8: Spatial data process
+
+-   Lecture 9: Spatial data create
+
+-   Lecture 10: Spatial data analyze
+
+Section 3: How geographic data can be utilized for the policy analysis?
+
+-   Lecture 11: Social applications of GIS
+
+-   Lecture 12: GIS to solving real world problem (Nankai trough hazard map 1)
+
+-   Lecture 13: GIS to solving real world problem (Nankai trough hazard map 2)
+
+-   Lecture 14: GIS to solving real world problem ($CO_2$ emission)
+
+-   Lecture 15: GIS to solving real world problem (Biodiversity)
+
+![Geographic Information System](figures/GIS.png)
