@@ -1,14 +1,10 @@
-# Introduction to Geographic Information System (GIS)
+## Geographic Information System (GIS)
 
-- A geographic information system (GIS) consists of integrated computer hardware and software that store, manage, analyze, edit, output, and visualize geographic data.
+Geographic information system (GIS) consists of integrated computer hardware and software that store, manage, analyze, edit, output, and visualize geographic data.
 
-## Definition of Geoinformatics
+## Why we need to learn GIS?
 
--   Geoinformatics is the science and the technology which develops and uses information science infrastructure to address the problems of geography and related branches of science and engineering.
-
-## Why we need to study Geoinformatics?
-
-Geoinformatics become very important technology to decision-makers across a wide range of disciplines:
+GIS become very important technology to decision-makers across a wide range of disciplines:
 
     -   Agriculture
     -   Climate change
@@ -28,20 +24,20 @@ Geoinformatics become very important technology to decision-makers across a wide
     -   Transport network planning
     -   Maritime transport
 
-## Geographic coordinate system (GCS) 
+## Geographic coordinate system (GCS)
 
-- Geographic coordinate system (GCS) is a three-dimensional reference system that locates points on the Earth's surface. The unit of measure is usually decimal degrees. A point has two coordinate values:
+Geographic coordinate system (GCS) is a three-dimensional reference system that locates points on the Earth's surface. The unit of measure is usually decimal degrees. A point has two coordinate values:
 
     -   Latitude and
     -   Longitude
 
 ### Find coordinates on google maps on the mobile app:
 
-    -   Open the google maps app on your iPhone or Android phone
-    -   Enter the location, or select and hold to drop a pin on the map of the location you want the coordinates for
-    -   Scroll down to find the coordinates.
-    -   Tap the coordinates to copy to your phone's clipboard
-    -   Paste the coordinates
+-   Open the google maps app on your iPhone or Android phone
+-   Enter the location, or select and hold to drop a pin on the map of the location you want the coordinates for
+-   Scroll down to find the coordinates.
+-   Tap the coordinates to copy to your phone's clipboard
+-   Paste the coordinates
 
 > Find coordinates to identify and share the location of the Eikokuji Campus of Kochi University of Technology.
 
@@ -51,27 +47,27 @@ Geoinformatics become very important technology to decision-makers across a wide
 
 We will primarily use QGIS and R software. Reasons:
 
-    -   These are powerful and free
-    -   Available in this lab
-    -   You can install in your own machine
+-   These are powerful and free
+-   Available in this lab
+-   You can install in your own machine
 
 ### For next lectures
 
--   Install QGIS in your computer (If you have any difficulties to install, I will guide you to install the software during our face-to-face lectures.)
+-   Install QGIS in your computer (If you have any difficulties to install, I will guide you to install the software during our face-to-face lectures)
 
 -   The web-link for downloading the software is below: <https://qgis.org/en/site/forusers/download.html>
 
 Everything you need is in Moodle:
 
-    -    Syllabus
-    -    Lecture materials
-    -    Assigned reading
-    -    Assignments
-    -    Email address to submit homework, assignments and reports: **geoinformatics.moinul\@gmail.com**
+-   Syllabus
+-   Lecture materials
+-   Assigned reading
+-   Assignments
+-   Email address to submit homework, assignments and reports: **geoinformatics.moinul\@gmail.com**
 
 Grades:
 
-    -    Assignments
-    -    Quizzes
-    -    Final Exam
-    -    Class participation
+-   Assignments
+-   Quizzes
+-   Final Exam
+-   Class participation
