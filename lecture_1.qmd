@@ -1,21 +1,27 @@
 # Objectives
 
-- Introductions
-- Review syllabus and learning objectives
-- Begin our introduction to GIS
+-   Introductions
+-   Review syllabus and learning objectives
+-   Begin our introduction to GIS
 
 ## Everything you Need is in Moodle
 
-- Syllabus
-- Lecture materials
-- Assigned reading
-- Assignments
+-   Syllabus
+-   Lecture materials
+-   Assigned reading
+-   Assignments
+-   Email address to submit Homework, assignments and reports: **geoinformatics.moinul\@gmail.com**
 
-### Email address to submit Homework, assignments and reports: geoinformatics.moinul@gmail.com
+# Grades
+
+-   Assignments
+-   Quizzes
+-   Final Exam
+-   Class participation
 
 # Introduction to GIS
 
-## Defination of Geoinformatics
+## Definition of Geoinformatics
 
 -   Geoinformatics is the science and the technology which develops and uses information science infrastructure to address the problems of geography and related branches of science and engineering.
 
@@ -61,6 +67,8 @@
 
 > Find coordinates to identify and share the location of the Eikokuji Campus of Kochi University of Technology.
 
+![Find the coordinates on google map mobile application](figures/cordinate.jpg){fig-align="center" width="185"}
+
 ## Software
 
 -   We will primarily use QGIS and R software.
@@ -68,3 +76,9 @@
     -   These are powerful and free
     -   Available in this lab
     -   You can install in your own machine
+
+## For next lectures
+
+-   Install QGIS in your computer (If you have any difficulties to install, I will guide you to install the software during our face-to-face lectures.)
+
+-   The web-link for downloading the software is below: <https://qgis.org/en/site/forusers/download.html>

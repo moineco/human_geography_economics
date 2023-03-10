@@ -11,48 +11,69 @@
     "href": "lecture_1.html",
     "title": "1  Objectives",
     "section": "",
-    "text": "2 Introduction to GIS"
+    "text": "2 Grades"
   },
   {
     "objectID": "lecture_1.html#why-we-need-to-study-geoinformatics",
     "href": "lecture_1.html#why-we-need-to-study-geoinformatics",
     "title": "1  Objectives",
-    "section": "2.2 Why we need to study Geoinformatics?",
-    "text": "2.2 Why we need to study Geoinformatics?\n\nGeoinformatics become very important technology to decision-makers across a wide range of disciplines.\n\nAgriculture\nClimate change\nOceanography\nBusiness location planning\nArchitecture\nTelecommunications\nCriminology\nAviation\nBiodiversity conservation\nUrban planning\nLand use management\nNavigation systems\nPublic health\nEnvironmental analysis\nMilitary\nTransport network planning\nMaritime transport"
+    "section": "3.2 Why we need to study Geoinformatics?",
+    "text": "3.2 Why we need to study Geoinformatics?\n\nGeoinformatics become very important technology to decision-makers across a wide range of disciplines.\n\nAgriculture\nClimate change\nOceanography\nBusiness location planning\nArchitecture\nTelecommunications\nCriminology\nAviation\nBiodiversity conservation\nUrban planning\nLand use management\nNavigation systems\nPublic health\nEnvironmental analysis\nMilitary\nTransport network planning\nMaritime transport"
   },
   {
     "objectID": "lecture_1.html#geographic-coordinate-system-gcs",
     "href": "lecture_1.html#geographic-coordinate-system-gcs",
     "title": "1  Objectives",
-    "section": "2.3 Geographic coordinate system (GCS)",
-    "text": "2.3 Geographic coordinate system (GCS)\n\nA geographic coordinate system is a three-dimensional reference system that locates points on the Earth’s surface. The unit of measure is usually decimal degrees. A point has two coordinate values:\n\nLatitude and\nLongitude"
+    "section": "3.3 Geographic coordinate system (GCS)",
+    "text": "3.3 Geographic coordinate system (GCS)\n\nA geographic coordinate system is a three-dimensional reference system that locates points on the Earth’s surface. The unit of measure is usually decimal degrees. A point has two coordinate values:\n\nLatitude and\nLongitude"
   },
   {
     "objectID": "lecture_1.html#how-to-find-coordinates-on-google-maps-on-the-mobile-app",
     "href": "lecture_1.html#how-to-find-coordinates-on-google-maps-on-the-mobile-app",
     "title": "1  Objectives",
-    "section": "2.4 How to find coordinates on Google Maps on the mobile app?",
-    "text": "2.4 How to find coordinates on Google Maps on the mobile app?\n\nOpen the Google Maps app on your iPhone or Android phone\nEnter the location, or select and hold to drop a pin on the map of the location you want the coordinates for\nScroll down to find the coordinates.\nTap the coordinates to copy to your phone’s clipboard\nPaste the coordinates\n\n\nFind coordinates to identify and share the location of the Eikokuji Campus of Kochi University of Technology."
+    "section": "3.4 How to find coordinates on Google Maps on the mobile app?",
+    "text": "3.4 How to find coordinates on Google Maps on the mobile app?\n\nOpen the Google Maps app on your iPhone or Android phone\nEnter the location, or select and hold to drop a pin on the map of the location you want the coordinates for\nScroll down to find the coordinates.\nTap the coordinates to copy to your phone’s clipboard\nPaste the coordinates\n\n\nFind coordinates to identify and share the location of the Eikokuji Campus of Kochi University of Technology.\n\n\n\n\nFind the coordinates on google map mobile application"
   },
   {
     "objectID": "lecture_1.html#software",
     "href": "lecture_1.html#software",
     "title": "1  Objectives",
-    "section": "2.5 Software",
-    "text": "2.5 Software\n\nWe will primarily use QGIS and R software.\nWhy?\n\nThese are powerful and free\nAvailable in this lab\nYou can install in your own machine"
+    "section": "3.5 Software",
+    "text": "3.5 Software\n\nWe will primarily use QGIS and R software.\nWhy?\n\nThese are powerful and free\nAvailable in this lab\nYou can install in your own machine"
   },
   {
     "objectID": "lecture_1.html#defination-of-geoinformatics",
     "href": "lecture_1.html#defination-of-geoinformatics",
     "title": "1  Objectives",
-    "section": "2.1 Defination of Geoinformatics",
-    "text": "2.1 Defination of Geoinformatics\n\nGeoinformatics is the science and the technology which develops and uses information science infrastructure to address the problems of geography and related branches of science and engineering."
+    "section": "3.1 Defination of Geoinformatics",
+    "text": "3.1 Defination of Geoinformatics\n\nGeoinformatics is the science and the technology which develops and uses information science infrastructure to address the problems of geography and related branches of science and engineering."
   },
   {
     "objectID": "lecture_1.html#everything-you-need-is-in-moodle",
     "href": "lecture_1.html#everything-you-need-is-in-moodle",
     "title": "1  Objectives",
     "section": "1.1 Everything you Need is in Moodle",
-    "text": "1.1 Everything you Need is in Moodle\n\nSyllabus\nLecture materials\nAssigned reading\nAssignments\n\n\n1.1.1 Email address to submit Homework, assignments and reports: geoinformatics.moinul@gmail.com"
+    "text": "1.1 Everything you Need is in Moodle\n\nSyllabus\nLecture materials\nAssigned reading\nAssignments\nEmail address to submit Homework, assignments and reports: geoinformatics.moinul@gmail.com"
+  },
+  {
+    "objectID": "lecture_1.html#for-next-time",
+    "href": "lecture_1.html#for-next-time",
+    "title": "1  Objectives",
+    "section": "3.6 For Next Time",
+    "text": "3.6 For Next Time\n\nInstall QGIS in your computer (If you have any difficulties to install, I will guide you to install the software during our face-to-face lectures.)\nThe weblink for downloading the software is below: https://qgis.org/en/site/forusers/download.html"
+  },
+  {
+    "objectID": "lecture_1.html#definition-of-geoinformatics",
+    "href": "lecture_1.html#definition-of-geoinformatics",
+    "title": "1  Objectives",
+    "section": "3.1 Definition of Geoinformatics",
+    "text": "3.1 Definition of Geoinformatics\n\nGeoinformatics is the science and the technology which develops and uses information science infrastructure to address the problems of geography and related branches of science and engineering."
+  },
+  {
+    "objectID": "lecture_1.html#for-next-lectures",
+    "href": "lecture_1.html#for-next-lectures",
+    "title": "1  Objectives",
+    "section": "3.6 For next lectures",
+    "text": "3.6 For next lectures\n\nInstall QGIS in your computer (If you have any difficulties to install, I will guide you to install the software during our face-to-face lectures.)\nThe web-link for downloading the software is below: https://qgis.org/en/site/forusers/download.html"
   }
 ]
