@@ -67,15 +67,15 @@ We will primarily use QGIS and R software. Reasons:
 
 Everything you need is in Moodle:
 
--   Syllabus
--   Lecture materials
--   Assigned reading
--   Assignments
--   Email address to submit homework, assignments and reports: **geoinformatics.moinul\@gmail.com**
+   -  Syllabus
+   -  Lecture materials
+   -  Assigned reading
+   -  Assignments
+   -  Email address to submit homework, assignments and reports: **geoinformatics.moinul\@gmail.com**
 
 Grades:
 
--   Assignments
--   Quizzes
--   Final Exam
--   Class participation
+   -   Assignments
+   -   Quizzes
+   -   Final Exam
+   -   Class participation
