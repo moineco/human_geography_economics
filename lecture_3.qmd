@@ -15,9 +15,17 @@ leaflet() |>
 ```
 The use of R code, therefore, enables teaching geocomputation with reference to reproducible examples representing real world phenomena, rather than just abstract concepts.
 
-> The packages needed to reproduce Part 1 of this book can be installed with the following command: remotes::install_github("geocompr/geocompkg"). This command uses the function install_packages() from the remotes package to install source code hosted on the GitHub code hosting, version and collaboration platform. 
+### To install the necessary packages for lecture three:
 
-> The following command will install all dependencies required to reproduce the entire book (warning: this may take several minutes): remotes::install_github("geocompr/geocompkg", dependencies = TRUE)
+>  remotes::install_github("geocompr/geocompkg"). 
+
+This command uses the function install_packages() from the remotes package to install source code hosted on the GitHub code hosting, version and collaboration platform. 
+
+### To install necessary packages for the entire lectures:
+
+>  remotes::install_github("geocompr/geocompkg", dependencies = TRUE)
+
+The above command will install all dependencies required to reproduce the entire lecture
 
 ## Use the package **sf** 
 
