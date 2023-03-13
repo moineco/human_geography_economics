@@ -42,9 +42,19 @@ class(world)
 names(world)
 ```
 
-We will plot this **world** class by using *plot()* 
+We will plot this **world** class by using *plot()* in @fig-mymap-4
 
-```{r, warning=FALSE, message=FALSE}
+```{r fig-mymap-4, warning=FALSE, message=FALSE}
+#| code-fold: true
+#| fig.cap: "A spatial plot of the world using the sf package, with a facet for each attribute."
 plot(world)
 ```
+### Summarize the data  
+
+Being able to treat spatial objects as regular data frames with spatial powers has many advantages, especially if you are already used to working with data frames. The commonly used summary() function, for example, provides a useful overview of the variables within the world object.
+
+```{r}
+summary(world["lifeExp"])
+```
+
 

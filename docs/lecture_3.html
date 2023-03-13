@@ -264,7 +264,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <ul>
   <li><a href="#to-install-the-necessary-packages-for-lecture-three" id="toc-to-install-the-necessary-packages-for-lecture-three" class="nav-link active" data-scroll-target="#to-install-the-necessary-packages-for-lecture-three"><span class="toc-section-number">3.0.1</span>  To install the necessary packages for lecture three:</a></li>
   <li><a href="#to-install-necessary-packages-for-the-entire-lectures" id="toc-to-install-necessary-packages-for-the-entire-lectures" class="nav-link" data-scroll-target="#to-install-necessary-packages-for-the-entire-lectures"><span class="toc-section-number">3.0.2</span>  To install necessary packages for the entire lectures:</a></li>
-  <li><a href="#use-the-package-sf" id="toc-use-the-package-sf" class="nav-link" data-scroll-target="#use-the-package-sf"><span class="toc-section-number">3.1</span>  Use the package <strong>sf</strong></a></li>
+  <li><a href="#use-the-package-sf" id="toc-use-the-package-sf" class="nav-link" data-scroll-target="#use-the-package-sf"><span class="toc-section-number">3.1</span>  Use the package <strong>sf</strong></a>
+  <ul class="collapse">
+  <li><a href="#summarize-the-data" id="toc-summarize-the-data" class="nav-link" data-scroll-target="#summarize-the-data"><span class="toc-section-number">3.1.1</span>  Summarize the data</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -302,8 +305,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </details>
 <div id="fig-mymap-3" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-3c8b410ad25b00acb3e7" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-3c8b410ad25b00acb3e7">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["NASAGIBS.ViirsEarthAtNight2012",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[[52,53,49],[-3,23,11],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["Robin","Jakub","Jannes"],null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[49,53],"lng":[-3,23]}},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-9ea110b7128e45be4324" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-9ea110b7128e45be4324">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["NASAGIBS.ViirsEarthAtNight2012",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[[52,53,49],[-3,23,11],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["Robin","Jakub","Jannes"],null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[49,53],"lng":[-3,23]}},"evals":[],"jsHooks":[]}</script>
 <p></p><figcaption class="figure-caption">Figure&nbsp;3.1: The blue markers indicate some specific geographic locations. The basemap is a tiled image of the Earth at night provided by NASA.</figcaption><p></p>
 </figure>
 </div>
@@ -345,15 +348,40 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
  [7] "area_km2"  "pop"       "lifeExp"   "gdpPercap" "geom"     </code></pre>
 </div>
 </div>
-<p>We will plot this <strong>world</strong> class by using <em>plot()</em></p>
+<p>We will plot this <strong>world</strong> class by using <em>plot()</em> in <a href="#fig-mymap-4">Figure&nbsp;<span>3.2</span></a></p>
 <div class="cell">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(world)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output-display">
-<p><img src="lecture_3_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+<div id="fig-mymap-4" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="lecture_3_files/figure-html/fig-mymap-4-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3.2: A spatial plot of the world using the sf package, with a facet for each attribute.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="summarize-the-data" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="summarize-the-data"><span class="header-section-number">3.1.1</span> Summarize the data</h3>
+<p>Being able to treat spatial objects as regular data frames with spatial powers has many advantages, especially if you are already used to working with data frames. The commonly used summary() function, for example, provides a useful overview of the variables within the world object.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(world[<span class="st">"lifeExp"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    lifeExp                 geom    
+ Min.   :50.62   MULTIPOLYGON :177  
+ 1st Qu.:64.96   epsg:4326    :  0  
+ Median :72.87   +proj=long...:  0  
+ Mean   :70.85                      
+ 3rd Qu.:76.78                      
+ Max.   :83.59                      
+ NA's   :10                         </code></pre>
 </div>
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
