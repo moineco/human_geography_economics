@@ -268,6 +268,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <ul class="collapse">
   <li><a href="#summarize-the-data" id="toc-summarize-the-data" class="nav-link" data-scroll-target="#summarize-the-data"><span class="toc-section-number">3.1.1</span>  Summarize the data</a></li>
   <li><a href="#sub-plots-in-sf-package" id="toc-sub-plots-in-sf-package" class="nav-link" data-scroll-target="#sub-plots-in-sf-package"><span class="toc-section-number">3.1.2</span>  Sub-plots in <strong>sf</strong> package</a></li>
+  <li><a href="#base-plot-arguments" id="toc-base-plot-arguments" class="nav-link" data-scroll-target="#base-plot-arguments"><span class="toc-section-number">3.1.3</span>  Base plot arguments</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -306,8 +307,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </details>
 <div id="fig-mymap-3" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-878e2b5a70ba67977dc2" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-878e2b5a70ba67977dc2">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["NASAGIBS.ViirsEarthAtNight2012",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[[52,53,49],[-3,23,11],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["Robin","Jakub","Jannes"],null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[49,53],"lng":[-3,23]}},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-bd4bd2eb70560701f22c" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-bd4bd2eb70560701f22c">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["NASAGIBS.ViirsEarthAtNight2012",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[[52,53,49],[-3,23,11],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["Robin","Jakub","Jannes"],null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[49,53],"lng":[-3,23]}},"evals":[],"jsHooks":[]}</script>
 <p></p><figcaption class="figure-caption">Figure&nbsp;3.1: The blue markers indicate some specific geographic locations. The basemap is a tiled image of the Earth at night provided by NASA.</figcaption><p></p>
 </figure>
 </div>
@@ -430,6 +431,44 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <figure class="figure">
 <p><img src="lecture_3_files/figure-html/fig-mymap-7-1.png" class="img-fluid figure-img" width="672"></p>
 <p></p><figcaption class="figure-caption">Figure&nbsp;3.5: A plot of Asia added as a layer on top of countries worldwide.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="base-plot-arguments" class="level3" data-number="3.1.3">
+<h3 data-number="3.1.3" class="anchored" data-anchor-id="base-plot-arguments"><span class="header-section-number">3.1.3</span> Base plot arguments</h3>
+<p>There are various ways to modify maps with sf’s plot() method. <a href="#fig-mymap-8">Figure&nbsp;<span>3.6</span></a> illustrates this flexibility by overlaying circles, whose diameters (set with cex =) represent country populations, on a map of the world.</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(world[<span class="st">"continent"</span>], <span class="at">reset =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>cex <span class="ot">=</span> <span class="fu">sqrt</span>(world<span class="sc">$</span>pop) <span class="sc">/</span> <span class="dv">10000</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>world_cents <span class="ot">=</span> <span class="fu">st_centroid</span>(world, <span class="at">of_largest =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">st_geometry</span>(world_cents), <span class="at">add =</span> <span class="cn">TRUE</span>, <span class="at">cex =</span> cex)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-mymap-8" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="lecture_3_files/figure-html/fig-mymap-8-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3.6: Country continents (represented by fill color) and 2015 populations.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>sf</strong>’s plot method also has arguments specific to geographic data. expandBB, for example, can be used to plot an sf object in context: it takes a numeric vector of length four that expands the bounding box of the plot relative to zero in the following order: bottom, left, top, right. <a href="#fig-mymap-9">Figure&nbsp;<span>3.7</span></a> plot India in the context of its giant Asian neighbors</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>india <span class="ot">=</span> world[world<span class="sc">$</span>name_long <span class="sc">==</span> <span class="st">"India"</span>, ]</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">st_geometry</span>(india), <span class="at">expandBB =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.2</span>, <span class="fl">0.1</span>, <span class="dv">1</span>), <span class="at">col =</span> <span class="st">"gray"</span>, <span class="at">lwd =</span> <span class="dv">3</span>)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(world_asia[<span class="dv">0</span>], <span class="at">add =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-mymap-9" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="lecture_3_files/figure-html/fig-mymap-9-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3.7: India in context, demonstrating the expandBB argument.</figcaption><p></p>
 </figure>
 </div>
 </div>

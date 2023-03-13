@@ -91,6 +91,29 @@ plot(world["pop"], reset = FALSE)
 plot(asia, add = TRUE, col = "red")
 ```
 
+### Base plot arguments
+
+There are various ways to modify maps with sf’s plot() method. 
+@fig-mymap-8 illustrates this flexibility by overlaying circles, whose diameters (set with cex =) represent country populations, on a map of the world. 
+
+```{r fig-mymap-8, warning=FALSE, message=FALSE}
+#| code-fold: true
+#| fig.cap: "Country continents (represented by fill color) and 2015 populations."
+plot(world["continent"], reset = FALSE)
+cex = sqrt(world$pop) / 10000
+world_cents = st_centroid(world, of_largest = TRUE)
+plot(st_geometry(world_cents), add = TRUE, cex = cex)
+```
+
+**sf**’s plot method also has arguments specific to geographic data. expandBB, for example, can be used to plot an sf object in context: it takes a numeric vector of length four that expands the bounding box of the plot relative to zero in the following order: bottom, left, top, right. @fig-mymap-9 plot India in the context of its giant Asian neighbors
+
+```{r fig-mymap-9, warning=FALSE, message=FALSE}
+#| code-fold: true
+#| fig.cap: "India in context, demonstrating the expandBB argument."
+india = world[world$name_long == "India", ]
+plot(st_geometry(india), expandBB = c(0, 0.2, 0.1, 1), col = "gray", lwd = 3)
+plot(world_asia[0], add = TRUE)
+```
 
 
 
