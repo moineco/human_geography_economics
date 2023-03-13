@@ -6,30 +6,30 @@ Geographic information system (GIS) consists of integrated computer hardware and
 
 GIS become very important technology to decision-makers across a wide range of disciplines:
 
-    -   Agriculture
-    -   Climate change
-    -   Oceanography
-    -   Business location planning
-    -   Architecture
-    -   Telecommunications
-    -   Criminology
-    -   Aviation
-    -   Biodiversity conservation
-    -   Urban planning
-    -   Land use management
-    -   Navigation systems
-    -   Public health
-    -   Environmental analysis
-    -   Military
-    -   Transport network planning
-    -   Maritime transport
+  -   Agriculture
+  -   Climate change
+  -   Oceanography
+  -   Business location planning
+  -   Architecture
+  -   Telecommunications
+  -   Criminology
+  -   Aviation
+  -   Biodiversity conservation
+  -   Urban planning
+  -   Land use management
+  -   Navigation systems
+  -   Public health
+  -   Environmental analysis
+  -   Military
+  -   Transport network planning
+  -   Maritime transport
 
 ## Geographic coordinate system (GCS)
 
 Geographic coordinate system (GCS) is a three-dimensional reference system that locates points on the Earth's surface. The unit of measure is usually decimal degrees. A point has two coordinate values:
 
-    -   Latitude and
-    -   Longitude
+  -   Latitude and
+  -   Longitude
 
 ### Find coordinates on google maps on the mobile app:
 
