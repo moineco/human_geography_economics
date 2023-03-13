@@ -292,7 +292,7 @@ remotes::install_github("Nowosad/spDataLarge")</code></pre>
 </blockquote>
 <section id="a-first-map" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="a-first-map"><span class="header-section-number">2.1</span> A first map</h2>
-<p>The typical way to graph spatial data is by creating a map. Let us consider a simple map, shown in <a href="#fig-first-map">Figure&nbsp;<span>2.1</span></a>.</p>
+<p>The typical way to graph spatial data is by creating a map. Let us consider a simple map, shown in <a href="#fig-mymap">Figure&nbsp;<span>2.1</span></a>.</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -306,10 +306,10 @@ remotes::install_github("Nowosad/spDataLarge")</code></pre>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">plot</span>(<span class="at">graticule =</span> <span class="cn">TRUE</span>, <span class="at">axes =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<div id="fig-first-map" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-mymap" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="lecture_2_files/figure-html/fig-first-map-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;2.1: A first map: birth counts from 1974 to 1978 in North Carolina counties</figcaption><p></p>
+<p><img src="lecture_2_files/figure-html/fig-mymap-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2.1: Birth counts from 1974 to 1978 in North Carolina counties</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -327,8 +327,8 @@ remotes::install_github("Nowosad/spDataLarge")</code></pre>
 <section id="polygons" class="level3" data-number="2.1.2">
 <h3 data-number="2.1.2" class="anchored" data-anchor-id="polygons"><span class="header-section-number">2.1.2</span> Polygons</h3>
 <ul>
-<li><p>Polygons consist of sequences of points, connected by straight lines. As can be seen from <a href="#fig-first-map">Figure&nbsp;<span>2.1</span></a>, lines of equal latitude and longitude do not form straight lines, indicating that some form of projection took place before plotting.</p></li>
-<li><p>The color values in <a href="#fig-first-map">Figure&nbsp;<span>2.1</span></a> are derived from numeric values of a variable, <code>BIR74</code>, which has a single value associated with each geometry or feature. In this case, <code>BIR74</code> refers to birth counts, meaning counts over the region. This implies that the count does not refer to a value associated with every point inside the polygon, which the continuous color might suggest, but rather measures an integral (sum) over the polygon.</p></li>
+<li><p>Polygons consist of sequences of points, connected by straight lines. As can be seen from <a href="#fig-mymap">Figure&nbsp;<span>2.1</span></a>, lines of equal latitude and longitude do not form straight lines, indicating that some form of projection took place before plotting.</p></li>
+<li><p>The color values in <a href="#fig-mymap">Figure&nbsp;<span>2.1</span></a> are derived from numeric values of a variable, <code>BIR74</code>, which has a single value associated with each geometry or feature. In this case, <code>BIR74</code> refers to birth counts, meaning counts over the region. This implies that the count does not refer to a value associated with every point inside the polygon, which the continuous color might suggest, but rather measures an integral (sum) over the polygon.</p></li>
 </ul>
 
 

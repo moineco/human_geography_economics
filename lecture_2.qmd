@@ -16,10 +16,10 @@ remotes::install_github("Nowosad/spDataLarge")
 ## A first map
 
 The typical way to graph spatial data is by creating a map. Let us consider
-a simple map, shown in @fig-first-map.
+a simple map, shown in @fig-mymap.
 
-```{r fig-first-map, cache = FALSE, message = FALSE, echo=TRUE}
-#| fig.cap: "A first map: birth counts from 1974 to 1978 in North Carolina counties"
+```{r fig-mymap, cache = FALSE, message = FALSE, echo=TRUE}
+#| fig.cap: "Birth counts from 1974 to 1978 in North Carolina counties"
 #| code-fold: true
 #| fig.height: 4
 library(tidyverse)
@@ -47,6 +47,6 @@ A number of graphical elements are present here, in this case:
 
 ### Polygons
 
-- Polygons consist of sequences of points, connected by straight lines. As can be seen from @fig-first-map, lines of equal latitude and longitude do not form straight lines, indicating that some form of projection took place before plotting.
+- Polygons consist of sequences of points, connected by straight lines. As can be seen from @fig-mymap, lines of equal latitude and longitude do not form straight lines, indicating that some form of projection took place before plotting.
 
-- The color values in @fig-first-map are derived from numeric values of a variable, `BIR74`, which has a single value associated with each geometry or feature. In this case, `BIR74` refers to birth counts, meaning counts over the region. This implies that the count does not refer to a value associated with every point inside the polygon, which the continuous color might suggest, but rather measures an integral (sum) over the polygon.
+- The color values in @fig-mymap are derived from numeric values of a variable, `BIR74`, which has a single value associated with each geometry or feature. In this case, `BIR74` refers to birth counts, meaning counts over the region. This implies that the count does not refer to a value associated with every point inside the polygon, which the continuous color might suggest, but rather measures an integral (sum) over the polygon.
