@@ -13,4 +13,30 @@ leaflet() |>
              lat = c(52, 53, 49), 
              popup = popup)
 ```
+The use of R code, therefore, enables teaching geocomputation with reference to reproducible examples representing real world phenomena, rather than just abstract concepts.
+
+> The packages needed to reproduce Part 1 of this book can be installed with the following command: remotes::install_github("geocompr/geocompkg"). This command uses the function install_packages() from the remotes package to install source code hosted on the GitHub code hosting, version and collaboration platform. 
+
+> The following command will install all dependencies required to reproduce the entire book (warning: this may take several minutes): remotes::install_github("geocompr/geocompkg", dependencies = TRUE)
+
+## Use the package **sf** 
+
+```{r}
+library(sf)
+library(spData)       
+library(spDataLarge)   
+```
+
+We will use the world dataset provided by spData, loaded at the beginning of this chapter, to show what sf objects are and how they work. world is an ‘sf data frame’ containing spatial and attribute columns, the names of which are returned by the function names() (the last column in this example contains the geographic information):
+
+```{r}
+class(world)
+names(world)
+```
+
+We will plot this **world** class by using *plot()* 
+
+```{r, warning=FALSE, message=FALSE}
+plot(world)
+```
 

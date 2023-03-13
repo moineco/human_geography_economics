@@ -152,5 +152,12 @@
     "title": "3  Geocoding for survey and natural experiment",
     "section": "",
     "text": "R’s flexibility and evolving geographic capabilities is interactive map making. This is demonstrated by the following code chunk, which creates Figure 3.1.\n\n\nCode\nlibrary(leaflet)\npopup = c(\"Robin\", \"Jakub\", \"Jannes\")\nleaflet() |>\n  addProviderTiles(\"NASAGIBS.ViirsEarthAtNight2012\") |>\n  addMarkers(lng = c(-3, 23, 11),\n             lat = c(52, 53, 49), \n             popup = popup)\n\n\n\n\n\nFigure 3.1: The blue markers indicate some specific geographic locations. The basemap is a tiled image of the Earth at night provided by NASA."
+  },
+  {
+    "objectID": "lecture_3.html#use-the-package-sf",
+    "href": "lecture_3.html#use-the-package-sf",
+    "title": "3  Geocoding for survey and natural experiment",
+    "section": "3.1 Use the package sf",
+    "text": "3.1 Use the package sf\n\nlibrary(sf)\n\nLinking to GEOS 3.11.1, GDAL 3.6.2, PROJ 9.1.1; sf_use_s2() is TRUE\n\nlibrary(spData)       \nlibrary(spDataLarge)   \n\nWe will use the world dataset provided by spData, loaded at the beginning of this chapter, to show what sf objects are and how they work. world is an ‘sf data frame’ containing spatial and attribute columns, the names of which are returned by the function names() (the last column in this example contains the geographic information):\n\nclass(world)\n\n[1] \"sf\"         \"tbl_df\"     \"tbl\"        \"data.frame\"\n\nnames(world)\n\n [1] \"iso_a2\"    \"name_long\" \"continent\" \"region_un\" \"subregion\" \"type\"     \n [7] \"area_km2\"  \"pop\"       \"lifeExp\"   \"gdpPercap\" \"geom\"     \n\n\nWe will plot this world class by using plot()\n\nplot(world)"
   }
 ]
