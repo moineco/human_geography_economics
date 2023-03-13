@@ -145,5 +145,12 @@
     "title": "2  GIS information provision",
     "section": "2.3 Spatial data types",
     "text": "2.3 Spatial data types\nThis lecture will provide brief explanations of the fundamental geographic data models: vector and raster.\n\nThe vector data model represents the world using points, lines and polygons. These have discrete, well-defined borders, meaning that vector datasets usually have a high level of precision.\nThe raster data model divides the surface up into cells of constant size. Raster datasets are the basis of background images used in web-mapping and have been a vital source of geographic data since the origins of aerial photography and satellite-based remote sensing devices. Rasters aggregate spatially specific features to a given resolution\n\nWhich to use? The answer likely depends on your domain of application:\n\nVector data tends to dominate the social sciences because human settlements tend to have discrete borders\nRaster dominates many environmental sciences because of the reliance on remote sensing data"
+  },
+  {
+    "objectID": "lecture_3.html",
+    "href": "lecture_3.html",
+    "title": "3  Geocoding for survey and natural experiment",
+    "section": "",
+    "text": "R’s flexibility and evolving geographic capabilities is interactive map making. This is demonstrated by the following code chunk, which creates Figure 3.1.\n\n\nCode\nlibrary(leaflet)\npopup = c(\"Robin\", \"Jakub\", \"Jannes\")\nleaflet() |>\n  addProviderTiles(\"NASAGIBS.ViirsEarthAtNight2012\") |>\n  addMarkers(lng = c(-3, 23, 11),\n             lat = c(52, 53, 49), \n             popup = popup)\n\n\n\n\n\nFigure 3.1: The blue markers indicate some specific geographic locations. The basemap is a tiled image of the Earth at night provided by NASA."
   }
 ]

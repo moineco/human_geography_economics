@@ -1,1 +1,16 @@
 # Geocoding for survey and natural experiment
+
+R’s flexibility and evolving geographic capabilities is interactive map making. This is demonstrated by the following code chunk, which creates @fig-mymap-3.
+
+```{r fig-mymap-3, cache = FALSE, echo = TRUE}
+#| code-fold: true
+#| fig.cap: "The blue markers indicate some specific geographic locations. The basemap is a tiled image of the Earth at night provided by NASA."
+library(leaflet)
+popup = c("Robin", "Jakub", "Jannes")
+leaflet() |>
+  addProviderTiles("NASAGIBS.ViirsEarthAtNight2012") |>
+  addMarkers(lng = c(-3, 23, 11),
+             lat = c(52, 53, 49), 
+             popup = popup)
+```
+
