@@ -13,12 +13,12 @@ remotes::install_github("Nowosad/spDataLarge")
 
 > **Note**: If you’re running Mac or Linux, the previous command to install sf may not work first time. These operating systems (OSs) have ‘systems requirements’ that are described in the package’s README. Various OS-specific instructions can be found online.
 
-## A first map
+## **My map**
 
 The typical way to graph spatial data is by creating a map. Let us consider
-a simple map, shown in @fig-mymap.
+a simple map, shown in @fig-mymap-1.
 
-```{r fig-mymap, cache = FALSE, message = FALSE, echo=TRUE}
+```{r fig-mymap-1, cache = FALSE, message = FALSE, echo=TRUE}
 #| fig.cap: "Birth counts from 1974 to 1978 in North Carolina counties"
 #| code-fold: true
 #| fig.height: 4
@@ -47,6 +47,20 @@ A number of graphical elements are present here, in this case:
 
 ### Polygons
 
-- Polygons consist of sequences of points, connected by straight lines. As can be seen from @fig-mymap, lines of equal latitude and longitude do not form straight lines, indicating that some form of projection took place before plotting.
+- Polygons consist of sequences of points, connected by straight lines. As can be seen from @fig-mymap-1, lines of equal latitude and longitude do not form straight lines, indicating that some form of projection took place before plotting.
 
-- The color values in @fig-mymap are derived from numeric values of a variable, `BIR74`, which has a single value associated with each geometry or feature. In this case, `BIR74` refers to birth counts, meaning counts over the region. This implies that the count does not refer to a value associated with every point inside the polygon, which the continuous color might suggest, but rather measures an integral (sum) over the polygon.
+- The color values in @fig-mymap-1 are derived from numeric values of a variable, `BIR74`, which has a single value associated with each geometry or feature. In this case, `BIR74` refers to birth counts, meaning counts over the region. This implies that the count does not refer to a value associated with every point inside the polygon, which the continuous color might suggest, but rather measures an integral (sum) over the polygon.
+
+## Interactive **My map** 
+
+An interactive, leaflet-based map is obtained in @fig-mymap-2.
+
+```{r fig-mymap-2, cache = FALSE, echo = TRUE}
+#| code-fold: true
+#| fig.cap: "Interactive map created with **mapview** package."
+library(mapview) |> suppressPackageStartupMessages()
+mapviewOptions(fgb = FALSE)
+nc.32119 |> mapview(zcol = "BIR74", legend = TRUE, col.regions = sf.colors)
+```
+
+

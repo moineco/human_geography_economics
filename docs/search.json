@@ -110,5 +110,26 @@
     "title": "2  GIS information provision",
     "section": "2.1 A first map",
     "text": "2.1 A first map\nThe typical way to graph spatial data is by creating a map. Let us consider a simple map, shown in Figure 2.1.\n\n\nCode\nlibrary(tidyverse)\nlibrary(sf)\nsystem.file(\"gpkg/nc.gpkg\", package=\"sf\") |>\n    read_sf() -> nc\nnc.32119 <- st_transform(nc, 'EPSG:32119')\nnc.32119 |>\n    select(BIR74) |>\n    plot(graticule = TRUE, axes = TRUE)\n\n\n\n\n\nFigure 2.1: Birth counts from 1974 to 1978 in North Carolina counties\n\n\n\n\nA number of graphical elements are present here, in this case:\n\n2.1.1 Map\n\nPolygons are drawn with a black outline and filled with colors chosen according to a variable BIR74, whose name is in the title\nA legend key explains the meaning of the colors, and has a certain color palette and color breaks, values at which color changes\nThe background of the map shows curved lines with constant latitude or longitude\nThe axis ticks show the latitude and longitude values\n\n\n\n2.1.2 Polygons\n\nPolygons consist of sequences of points, connected by straight lines. As can be seen from Figure 2.1, lines of equal latitude and longitude do not form straight lines, indicating that some form of projection took place before plotting.\nThe color values in Figure 2.1 are derived from numeric values of a variable, BIR74, which has a single value associated with each geometry or feature. In this case, BIR74 refers to birth counts, meaning counts over the region. This implies that the count does not refer to a value associated with every point inside the polygon, which the continuous color might suggest, but rather measures an integral (sum) over the polygon."
+  },
+  {
+    "objectID": "lecture_2.html#an-interactive-leaflet-based-map-is-obtained-in-fig-mymap-2.",
+    "href": "lecture_2.html#an-interactive-leaflet-based-map-is-obtained-in-fig-mymap-2.",
+    "title": "2  GIS information provision",
+    "section": "2.2 An interactive, leaflet-based map is obtained in Figure 2.2.",
+    "text": "2.2 An interactive, leaflet-based map is obtained in Figure 2.2.\n\n\nCode\nlibrary(mapview) |> suppressPackageStartupMessages()\nmapviewOptions(fgb = FALSE)\nnc.32119 |> mapview(zcol = \"BIR74\", legend = TRUE, col.regions = sf.colors)\n\n\n\n\n\n\nFigure 2.2: Interactive map created with mapview package."
+  },
+  {
+    "objectID": "lecture_2.html#my-map",
+    "href": "lecture_2.html#my-map",
+    "title": "2  GIS information provision",
+    "section": "2.1 My map",
+    "text": "2.1 My map\nThe typical way to graph spatial data is by creating a map. Let us consider a simple map, shown in Figure 2.1.\n\n\nCode\nlibrary(tidyverse)\nlibrary(sf)\nsystem.file(\"gpkg/nc.gpkg\", package=\"sf\") |>\n    read_sf() -> nc\nnc.32119 <- st_transform(nc, 'EPSG:32119')\nnc.32119 |>\n    select(BIR74) |>\n    plot(graticule = TRUE, axes = TRUE)\n\n\n\n\n\nFigure 2.1: Birth counts from 1974 to 1978 in North Carolina counties\n\n\n\n\nA number of graphical elements are present here, in this case:\n\n2.1.1 Map\n\nPolygons are drawn with a black outline and filled with colors chosen according to a variable BIR74, whose name is in the title\nA legend key explains the meaning of the colors, and has a certain color palette and color breaks, values at which color changes\nThe background of the map shows curved lines with constant latitude or longitude\nThe axis ticks show the latitude and longitude values\n\n\n\n2.1.2 Polygons\n\nPolygons consist of sequences of points, connected by straight lines. As can be seen from Figure 2.1, lines of equal latitude and longitude do not form straight lines, indicating that some form of projection took place before plotting.\nThe color values in Figure 2.1 are derived from numeric values of a variable, BIR74, which has a single value associated with each geometry or feature. In this case, BIR74 refers to birth counts, meaning counts over the region. This implies that the count does not refer to a value associated with every point inside the polygon, which the continuous color might suggest, but rather measures an integral (sum) over the polygon."
+  },
+  {
+    "objectID": "lecture_2.html#interactive-my-map",
+    "href": "lecture_2.html#interactive-my-map",
+    "title": "2  GIS information provision",
+    "section": "2.2 Interactive My map",
+    "text": "2.2 Interactive My map\nAn interactive, leaflet-based map is obtained in Figure 2.2.\n\n\nCode\nlibrary(mapview) |> suppressPackageStartupMessages()\nmapviewOptions(fgb = FALSE)\nnc.32119 |> mapview(zcol = \"BIR74\", legend = TRUE, col.regions = sf.colors)\n\n\n\n\n\n\nFigure 2.2: Interactive map created with mapview package."
   }
 ]
