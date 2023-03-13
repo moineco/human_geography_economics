@@ -51,6 +51,8 @@ We will primarily use QGIS and R software. Reasons:
 -   Available in this lab
 -   You can install in your own machine
 
+
+
 ### For next lectures
 
 -   Install QGIS in your computer (If you have any difficulties to install, I will guide you to install the software during our face-to-face lectures)

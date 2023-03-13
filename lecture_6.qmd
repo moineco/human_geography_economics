@@ -1,2 +1,1 @@
 # Spatial data collection, storage and management
-

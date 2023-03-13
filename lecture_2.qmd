@@ -1,1 +1,52 @@
 # GIS information provision
+
+This is the first practical chapter of the book, and therefore it comes with some software requirements. We assume that you have an up-to-date version of R installed and that you are comfortable using software with a command-line interface such as the integrated development environment (IDE) RStudio.
+
+The packages used in this chapter can be installed with the following commands:
+
+```{text}
+install.packages("sf")
+install.packages("raster")
+install.packages("spData")
+remotes::install_github("Nowosad/spDataLarge")
+```
+
+> **Note**: If you’re running Mac or Linux, the previous command to install sf may not work first time. These operating systems (OSs) have ‘systems requirements’ that are described in the package’s README. Various OS-specific instructions can be found online.
+
+## A first map
+
+The typical way to graph spatial data is by creating a map. Let us consider
+a simple map, shown in @fig-first-map.
+
+```{r fig-first-map, cache = FALSE, message = FALSE, echo=TRUE}
+#| fig.cap: "A first map: birth counts from 1974 to 1978 in North Carolina counties"
+#| code-fold: true
+#| fig.height: 4
+library(tidyverse)
+library(sf)
+system.file("gpkg/nc.gpkg", package="sf") |>
+    read_sf() -> nc
+nc.32119 <- st_transform(nc, 'EPSG:32119')
+nc.32119 |>
+    select(BIR74) |>
+    plot(graticule = TRUE, axes = TRUE)
+```
+
+A number of graphical elements are present here, in this case:
+
+### Map
+
+- Polygons are drawn with a black outline and filled with colors chosen according to a variable `BIR74`, whose name is in the title
+
+- A legend key explains the meaning of the colors, and has a certain color palette and color breaks, values at which color changes
+
+- The background of the map shows curved lines with constant latitude or longitude
+
+- The axis ticks show the latitude and longitude values 
+
+
+### Polygons
+
+- Polygons consist of sequences of points, connected by straight lines. As can be seen from @fig-first-map, lines of equal latitude and longitude do not form straight lines, indicating that some form of projection took place before plotting.
+
+- The color values in @fig-first-map are derived from numeric values of a variable, `BIR74`, which has a single value associated with each geometry or feature. In this case, `BIR74` refers to birth counts, meaning counts over the region. This implies that the count does not refer to a value associated with every point inside the polygon, which the continuous color might suggest, but rather measures an integral (sum) over the polygon.

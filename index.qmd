@@ -42,4 +42,22 @@ Section 3: How geographic data can be utilized for the policy analysis?
 
 -   Lecture 15: GIS to solving real world problem (Biodiversity)
 
-![Geographic Information System](figures/GIS.png)
+![Fig 1: Geographic Information System](figures/GIS.png)
+
+
+This lecture is for the readers who want to analyze, visualize and model geographic data with open source software. It is based on R and QGIS that has powerful data processing, visualization and geo-spatial capabilities. The book covers a wide range of topics and will be of interest to a wide range of people from many different backgrounds, especially:
+
+- Graduate students and researchers from fields specializing in geographic data including geography, remote sensing, planning, GIS and geographic data science.
+
+- Academics and post-graduate students working with geographic data — in fields such as economics, political science, finance, ecology etc.
+
+- The book is designed for introductory-to-intermediate R users interested in geocomputation and who does not have prior experience with geographic data.
+
+
+The book is divided into three parts:
+
+- Part I: Foundations, aimed at getting you up-to-speed with geographic data in R.
+- Part II: Extensions, which covers intermediate techniques.
+- Part III: Applications, to real-world problems.
+
+Geocomputation with QGIS and R will equip you with knowledge and skills to tackle a wide range of issues, including those with scientific, societal and environmental implications, manifested in geographic data. 
