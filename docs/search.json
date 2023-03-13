@@ -131,5 +131,19 @@
     "title": "2  GIS information provision",
     "section": "2.2 Interactive My map",
     "text": "2.2 Interactive My map\nAn interactive, leaflet-based map is obtained in Figure 2.2.\n\n\nCode\nlibrary(mapview) |> suppressPackageStartupMessages()\nmapviewOptions(fgb = FALSE)\nnc.32119 |> mapview(zcol = \"BIR74\", legend = TRUE, col.regions = sf.colors)\n\n\n\n\n\n\nFigure 2.2: Interactive map created with mapview package."
+  },
+  {
+    "objectID": "lecture_2.html#raster-and-vector-data",
+    "href": "lecture_2.html#raster-and-vector-data",
+    "title": "2  GIS information provision",
+    "section": "2.3 Raster and vector data",
+    "text": "2.3 Raster and vector data\nPolygon, point and line geometries are examples of vector data: point coordinates describe the “exact” locations that can be anywhere. Raster data on the other hand describe data where values are aligned on a raster, meaning on a regularly laid out lattice of usually square pixels. An example is shown in Figure 2.3.\n\n\nCode\nlibrary(stars)\npar(mfrow = c(2, 2))\npar(mar = rep(1, 4))\ntif <- system.file(\"tif/L7_ETMs.tif\", package = \"stars\")\nx <- read_stars(tif)[,,,1]\nimage(x, main = \"(a)\")\nimage(x[,1:10,1:10], text_values = TRUE, border = 'grey', main = \"(b)\")\nimage(x, main = \"(c)\")\nset.seed(131)\npts <- st_sample(st_as_sfc(st_bbox(x)), 3)\nplot(pts, add = TRUE, pch = 3, col = 'blue')\nimage(x, main = \"(d)\")\nplot(st_buffer(pts, 500), add = TRUE, pch = 3, border = 'blue', col = NA, lwd = 2)\n\n\n\n\n\nFigure 2.3: Raster maps (Olinda, Atlantic coast of Brazil): Landsat-7 blue band, with color values derived from data values (a), the top-left \\(10 \\times 10\\) sub-image from (a) with numeric values shown (b), and overlayed by two different types of vector data: three sample points (c), and a 500m radius around the points represented as polygons (d)"
+  },
+  {
+    "objectID": "lecture_2.html#spatial-data-types",
+    "href": "lecture_2.html#spatial-data-types",
+    "title": "2  GIS information provision",
+    "section": "2.3 Spatial data types",
+    "text": "2.3 Spatial data types\nThis lecture will provide brief explanations of the fundamental geographic data models: vector and raster.\n\nThe vector data model represents the world using points, lines and polygons. These have discrete, well-defined borders, meaning that vector datasets usually have a high level of precision.\nThe raster data model divides the surface up into cells of constant size. Raster datasets are the basis of background images used in web-mapping and have been a vital source of geographic data since the origins of aerial photography and satellite-based remote sensing devices. Rasters aggregate spatially specific features to a given resolution\n\nWhich to use? The answer likely depends on your domain of application:\n\nVector data tends to dominate the social sciences because human settlements tend to have discrete borders\nRaster dominates many environmental sciences because of the reliance on remote sensing data"
   }
 ]

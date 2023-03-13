@@ -71,4 +71,16 @@ mapviewOptions(fgb = FALSE)
 nc.32119 |> mapview(zcol = "BIR74", legend = TRUE, col.regions = sf.colors)
 ```
 
+## Spatial data types
 
+This lecture will provide brief explanations of the fundamental geographic data models: vector and raster.
+
+- The vector data model represents the world using points, lines and polygons. These have discrete, well-defined borders, meaning that vector datasets usually have a high level of precision.
+
+- The raster data model divides the surface up into cells of constant size. Raster datasets are the basis of background images used in web-mapping and have been a vital source of geographic data since the origins of aerial photography and satellite-based remote sensing devices. Rasters aggregate spatially specific features to a given resolution
+
+Which to use? The answer likely depends on your domain of application:
+
+- Vector data tends to dominate the social sciences because human settlements tend to have discrete borders
+
+- Raster dominates many environmental sciences because of the reliance on remote sensing data
