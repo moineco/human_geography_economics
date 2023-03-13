@@ -67,5 +67,13 @@ One sub-plot for each variable of the object, as illustrated in the left-hand pa
 plot(world[3:6])
 ```
 
+A sub-plot for the population in our world in @fig-mymap-6
+
+```{r fig-mymap-6, warning=FALSE, message=FALSE}
+#| code-fold: true
+#| fig.cap: "Population around the world"
+plot(world["pop"])
+```
+
 
 
