@@ -75,5 +75,25 @@ A sub-plot for the population in our world in @fig-mymap-6
 plot(world["pop"])
 ```
 
+Plots are added as layers to existing images by setting add = TRUE. The subsequent code chunk filters countries in Asia and combines them into a single feature:
+
+```{r}
+world_asia = world[world$continent == "Asia", ]
+asia = st_union(world_asia)
+```
+
+We can now plot the Asian continent over a map of the world in @fig-mymap-7
+
+```{r fig-mymap-7, warning=FALSE, message=FALSE}
+#| code-fold: true
+#| fig.cap: "A plot of Asia added as a layer on top of countries worldwide."
+plot(world["pop"], reset = FALSE)
+plot(asia, add = TRUE, col = "red")
+```
+
+
+
+
+
 
 
