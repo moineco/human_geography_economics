@@ -57,4 +57,15 @@ Being able to treat spatial objects as regular data frames with spatial powers h
 summary(world["lifeExp"])
 ```
 
+### Sub-plots in **sf** package
+
+One sub-plot for each variable of the object, as illustrated in the left-hand panel in @fig-mymap-5
+
+```{r fig-mymap-5, warning=FALSE, message=FALSE}
+#| code-fold: true
+#| fig.cap: "Plotting with sf with multiple variables"
+plot(world[3:6])
+```
+
+
 
