@@ -13,6 +13,14 @@ remotes::install_github("Nowosad/spDataLarge")
 
 > **Note**: If you’re running Mac or Linux, the previous command to install sf may not work first time. These operating systems (OSs) have ‘systems requirements’ that are described in the package’s README. Various OS-specific instructions can be found online.
 
+The necessary packages can be ‘loaded’ (technically they are attached) with the library() function as follows:
+
+```{r, message = FALSE}
+library(sf) 
+library(raster)
+```
+
+
 ## **My map**
 
 The typical way to graph spatial data is by creating a map. Let us consider
