@@ -184,7 +184,13 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#geometry-types" id="toc-geometry-types" class="nav-link active" data-scroll-target="#geometry-types"><span class="toc-section-number">4.1</span>  Geometry types</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -206,8 +212,43 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="geometry-types" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="geometry-types"><span class="header-section-number">4.1</span> Geometry types</h2>
+<p>Geometries are the basic building blocks of simple features. Simple features in R can take on one of the 17 geometry types supported by the sf package. In this chapter we will focus on the seven most commonly used types:</p>
+<ul>
+<li><p><strong>Point</strong>: The basis for each geometry type is the point. e.g.; <em>Point</em> (5 2)</p></li>
+<li><p><strong>Linestring</strong>: A linestring is a sequence of points with a straight line connecting the points. e.g.; <em>Linestring</em> (1 5, 4 4, 4 1, 2 2, 3 2)</p></li>
+<li><p><strong>Polygon</strong>: A polygon is a sequence of points that form a closed, non-intersecting ring. Closed means that the first and the last point of a polygon have the same coordinate. e.g.; Polygon without a hole: <em>Polygon</em> ((1 5, 2 2, 4 1, 4 4, 1 5))</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/point.png" class="img-fluid figure-img" width="500"></p>
+<p></p><figcaption class="figure-caption">Illustration of point, linestring and polygon geometries</figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li><p><strong>Multipoint</strong>: A combination of multiple POINTs. e.g.; <em>Multipoint</em> (5 2, 1 3, 3 4, 3 2)</p></li>
+<li><p><strong>Multilinestring</strong>: A combination of multiple LINESTRINGs. e.g.; <em>Multilinestring</em> ((1 5, 4 4, 4 1, 2 2, 3 2), (1 2, 2 4))</p></li>
+<li><p><strong>Multipolygon</strong>: A combination of multiple POLYGONs. e.g.; <em>Multipolygon</em> (((1 5, 2 2, 4 1, 4 4, 1 5), (0 2, 1 2, 1 3, 0 3, 0 2)))</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/multipoint.png" class="img-fluid figure-img" width="500"></p>
+<p></p><figcaption class="figure-caption">Illustration of multi geometries</figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li><strong>Geometrycollection</strong>: A geometry collection can contain any combination of geometries including (multi)points and linestrings. e.g.; <em>Geometrycollection</em> (MULTIPOINT (5 2, 1 3, 3 4, 3 2), LINESTRING (1 5, 4 4, 4 1, 2 2, 3 2))</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/geomcollection.png" class="img-fluid figure-img" width="180"></p>
+<p></p><figcaption class="figure-caption">Illustration of a geometry collection</figcaption><p></p>
+</figure>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
