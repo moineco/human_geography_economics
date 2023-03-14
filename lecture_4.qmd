@@ -2,24 +2,16 @@
 
 ## Geometry types
 
-Geometries are the basic building blocks of simple features. Simple features in R can take on one of the 17 geometry types supported by the sf package. In this chapter we will focus on the seven most commonly used types:
+Geometries are the basic building blocks of simple features. Simple features in R can take on one of the 17 geometry types supported by the sf package. The most commonly used simple features geometries, used to represent a single feature are:
 
 -   **Point**: The basis for each geometry type is the point. e.g.; *Point* (5 2)
-
--   **Linestring**: A linestring is a sequence of points with a straight line connecting the points. e.g.; *Linestring* (1 5, 4 4, 4 1, 2 2, 3 2)
-
--   **Polygon**: A polygon is a sequence of points that form a closed, non-intersecting ring. Closed means that the first and the last point of a polygon have the same coordinate. e.g.; Polygon without a hole: *Polygon* ((1 5, 2 2, 4 1, 4 4, 1 5))
-
-![Illustration of point, linestring and polygon geometries](figures/point.png){fig-align="center" width="500"}
-
 -   **Multipoint**: A combination of multiple Points. e.g.; *Multipoint* (5 2, 1 3, 3 4, 3 2)
-
+-   **Linestring**: A linestring is a sequence of points with a straight line connecting the points. e.g.; *Linestring* (1 5, 4 4, 4 1, 2 2, 3 2)
 -   **Multilinestring**: A combination of multiple Linestrings. e.g.; *Multilinestring* ((1 5, 4 4, 4 1, 2 2, 3 2), (1 2, 2 4))
-
+-   **Polygon**: A polygon is a sequence of points that form a closed, non-intersecting ring. Closed means that the first and the last point of a polygon have the same coordinate. e.g.; Polygon without a hole: *Polygon* ((1 5, 2 2, 4 1, 4 4, 1 5))
 -   **Multipolygon**: A combination of multiple Polygons. e.g.; *Multipolygon* (((1 5, 2 2, 4 1, 4 4, 1 5), (0 2, 1 2, 1 3, 0 3, 0 2)))
-
-![Illustration of multi geometries](figures/multipoint.png){fig-align="center" width="500"}
-
 -   **Geometrycollection**: A geometry collection can contain any combination of geometries including (multi)points and linestrings. e.g.; *Geometrycollection* (Multipoint (5 2, 1 3, 3 4, 3 2), Linestring (1 5, 4 4, 4 1, 2 2, 3 2))
 
+![Illustration of point, linestring and polygon geometries](figures/point.png){fig-align="center" width="500"}
+![Illustration of multi geometries](figures/multipoint.png){fig-align="center" width="500"}
 ![Illustration of a geometry collection](figures/geomcollection.png){fig-align="center" width="180"}
